@@ -107,7 +107,7 @@ def fitness(genomes, config):
 
         base.move()
 
-        if score > 10:
+        if score > 25:
             break
 
         draw_window(win, birds, pipes, base, score, GEN)
