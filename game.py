@@ -48,7 +48,7 @@ def fitness(genomes, config):
 
     run = True
     while run:
-        clock.tick(30)
+        clock.tick(120)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -107,7 +107,7 @@ def fitness(genomes, config):
 
         base.move()
 
-        if score > 50:
+        if score > 10:
             break
 
         draw_window(win, birds, pipes, base, score, GEN)
